@@ -1,9 +1,529 @@
+
 <!DOCTYPE html>
-<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Solutions | PowerVault USA</title><meta name="description" content="Power planning for homes, cabins, businesses and property developers.">
-<link rel="icon" href="images/favicon.ico"><link rel="apple-touch-icon" href="images/apple-touch-icon.png"><link rel="stylesheet" href="styles.css">
-</head><body><a class="skip-link" href="#main">Skip to content</a>
-<header class="site-header"><div class="nav-container"><a class="brand-link" href="index.html" aria-label="PowerVault USA home"><img src="images/white_logo.png" class="nav-logo" alt="PowerVault USA"></a>
-<button class="menu-toggle" id="menuToggle" type="button" aria-label="Open menu" aria-controls="navMenu" aria-expanded="false"><span></span><span></span><span></span></button>
-<nav class="nav-menu" id="navMenu" aria-label="Main navigation"><a href="index.html" >Home</a><a href="system.html" >The System</a><a href="solutions.html" aria-current="page">Solutions</a><a href="technology.html" >Technology</a><a href="installation.html" >Installation</a><a href="about.html" >About & Partners</a><a href="contact.html" class="nav-cta" >Get a Quote <span aria-hidden="true">↗</span></a></nav></div></header>
-<main id="main"><section class="page-hero"><div class="shell"><span class="eyebrow">SOLUTIONS</span><h1>Power planning for <em>the way you live.</em></h1><p>From residential backup to remote properties and projects, requirements begin with the application—not a one-size-fits-all equipment list.</p></div></section><section class="section"><div class="shell"><div class="section-heading "><span class="eyebrow">APPLICATIONS</span><h2>Where PowerVault fits</h2><p>Explore potential uses. Availability and suitability depend on site conditions and final engineering.</p></div><div class="two-grid"><article class="solution-card reveal"><div class="visual-placeholder compact reveal" role="img" aria-label="Placeholder: Homes &amp; estates"><span class="placeholder-icon">✧</span><strong>Homes & estates</strong><small>APPROPRIATE PROJECT PHOTOGRAPH • Replace with verified PowerVault photography</small></div><div class="solution-copy"><span class="eyebrow">01 / APPLICATION</span><h3>Homes & estates</h3><p>Support planning for refrigerators, heating and cooling, communications, lighting and other prioritized loads.</p></div></article><article class="solution-card reveal"><div class="visual-placeholder compact reveal" role="img" aria-label="Placeholder: Cabins &amp; remote properties"><span class="placeholder-icon">✧</span><strong>Cabins & remote properties</strong><small>APPROPRIATE PROJECT PHOTOGRAPH • Replace with verified PowerVault photography</small></div><div class="solution-copy"><span class="eyebrow">02 / APPLICATION</span><h3>Cabins & remote properties</h3><p>Discuss power continuity where utility access or reliability is a challenge.</p></div></article><article class="solution-card reveal"><div class="visual-placeholder compact reveal" role="img" aria-label="Placeholder: Small businesses"><span class="placeholder-icon">✧</span><strong>Small businesses</strong><small>APPROPRIATE PROJECT PHOTOGRAPH • Replace with verified PowerVault photography</small></div><div class="solution-copy"><span class="eyebrow">03 / APPLICATION</span><h3>Small businesses</h3><p>Explore application-specific continuity requirements with a qualified project team.</p></div></article><article class="solution-card reveal"><div class="visual-placeholder compact reveal" role="img" aria-label="Placeholder: Builders &amp; special projects"><span class="placeholder-icon">✧</span><strong>Builders & special projects</strong><small>APPROPRIATE PROJECT PHOTOGRAPH • Replace with verified PowerVault photography</small></div><div class="solution-copy"><span class="eyebrow">04 / APPLICATION</span><h3>Builders & special projects</h3><p>Coordinate electrical planning and equipment integration earlier in the build process.</p></div></article></div></div></section><section class="section section-tint"><div class="shell"><div class="section-heading "><span class="eyebrow">CONFIGURATION DISCOVERY</span><h2>Start with the right questions.</h2><p>A useful conversation starts with a few practical details.</p></div><div class="three-grid"><article class="info-card reveal"><span class="card-num">01</span><h3>What needs to run?</h3><p>Identify critical and optional loads, including high-startup equipment.</p></article><article class="info-card reveal"><span class="card-num">02</span><h3>For how long?</h3><p>Consider desired backup duration and fuel or charging options.</p></article><article class="info-card reveal"><span class="card-num">03</span><h3>What can the site support?</h3><p>Consider utility service, permitting, access and available space.</p></article></div></div></section><section class="cta-strip"><div class="shell cta-inner"><div><span class="eyebrow">START THE CONVERSATION</span><h2>Make room for more reliable power.</h2><p>Share your property and priorities. We’ll help explore an appropriate configuration.</p></div><a class="btn btn-light" href="contact.html">Request a Consultation <span aria-hidden="true">↗</span></a></div></section></main><footer class="footer"><div class="shell footer-grid"><div><img class="footer-logo" src="images/powervault-logo-hd.png" alt="PowerVault USA"><p>Reliable Power. Secure Tomorrow.</p></div><div><strong>Explore</strong><a href="system.html">The System</a><a href="solutions.html">Solutions</a><a href="technology.html">Technology</a></div><div><strong>Company</strong><a href="installation.html">Installation & Support</a><a href="about.html">About & Partners</a><a href="contact.html">Contact</a></div><div><strong>Get in touch</strong><a href="mailto:info@powervaultusa.com">info@powervaultusa.com</a><span>Product specifications and coverage subject to confirmation.</span></div></div><div class="shell footer-bottom"><span>© <span id="currentYear"></span> PowerVault USA. All rights reserved.</span><span>Designed around energy resilience.</span></div></footer><script src="script.js" defer></script></body></html>
+<html lang="en">
+
+<head>
+    <!-- ========================================
+         BASIC PAGE SETTINGS
+    ========================================= -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Solutions | PowerVault USA</title>
+
+    <meta
+        name="description"
+        content="Power planning for homes, cabins, businesses and property developers."
+    >
+
+    <!-- Favicons -->
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Accessibility -->
+    <a class="skip-link" href="#main">
+        Skip to content
+    </a>
+
+
+    <!-- ========================================
+         HEADER / NAVIGATION
+    ========================================= -->
+    <header class="site-header">
+
+        <div class="nav-container">
+
+            <!-- PowerVault Logo -->
+            <a
+                class="brand-link"
+                href="index.html"
+                aria-label="PowerVault USA home"
+            >
+                <img
+                    src="images/white_logo.png"
+                    class="nav-logo"
+                    alt="PowerVault USA"
+                >
+            </a>
+
+            <!-- Mobile Navigation Toggle -->
+            <button
+                class="menu-toggle"
+                id="menuToggle"
+                type="button"
+                aria-label="Open menu"
+                aria-controls="navMenu"
+                aria-expanded="false"
+            >
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <!-- Navigation Links -->
+            <nav
+                class="nav-menu"
+                id="navMenu"
+                aria-label="Main navigation"
+            >
+                <a href="index.html">Home</a>
+
+                <a href="system.html">The System</a>
+
+                <a href="solutions.html" aria-current="page">
+                    Solutions
+                </a>
+
+                <a href="technology.html">Technology</a>
+
+                <a href="installation.html">Installation</a>
+
+                <a href="about.html">About & Partners</a>
+
+                <a href="contact.html" class="nav-cta">
+                    Get a Quote
+                    <span aria-hidden="true">↗</span>
+                </a>
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <!-- ========================================
+         MAIN CONTENT
+    ========================================= -->
+    <main id="main">
+
+
+        <!-- ====================================
+             PAGE HERO
+        ==================================== -->
+        <section class="page-hero">
+
+            <div class="shell">
+
+                <span class="eyebrow">
+                    SOLUTIONS
+                </span>
+
+                <h1>
+                    Power planning for
+                    <em>the way you live.</em>
+                </h1>
+
+                <p>
+                    From residential backup to remote properties and
+                    projects, requirements begin with the application—not
+                    a one-size-fits-all equipment list.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ====================================
+             APPLICATIONS SECTION
+        ==================================== -->
+        <section class="section">
+
+            <div class="shell">
+
+                <!-- Section Heading -->
+                <div class="section-heading">
+
+                    <span class="eyebrow">
+                        APPLICATIONS
+                    </span>
+
+                    <h2>Where PowerVault fits</h2>
+
+                    <p>
+                        Explore potential uses. Availability and
+                        suitability depend on site conditions and
+                        final engineering.
+                    </p>
+
+                </div>
+
+
+                <!-- =================================
+                     FOUR APPLICATION CARDS
+                ================================= -->
+                <div class="two-grid">
+
+
+                    <!-- =============================
+                         01 - HOMES & ESTATES
+                    ============================== -->
+                    <article class="solution-card reveal">
+
+                        <div class="solution-image-container">
+
+                            <img
+                                src="images/powervault-homes-estates.jpg"
+                                alt="Luxury mountain estate illuminated at dusk"
+                                class="solution-image"
+                                loading="lazy"
+                            >
+
+                        </div>
+
+                        <div class="solution-copy">
+
+                            <span class="eyebrow">
+                                01 / APPLICATION
+                            </span>
+
+                            <h3>Homes & estates</h3>
+
+                            <p>
+                                Support planning for refrigerators,
+                                heating and cooling, communications,
+                                lighting and other prioritized loads.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- =============================
+                         02 - CABINS & REMOTE PROPERTIES
+                    ============================== -->
+                    <article class="solution-card reveal">
+
+                        <div class="solution-image-container">
+
+                            <img
+                                src="images/powervault-cabins-remote.jpg"
+                                alt="Remote mountain cabin overlooking a forested landscape"
+                                class="solution-image"
+                                loading="lazy"
+                            >
+
+                        </div>
+
+                        <div class="solution-copy">
+
+                            <span class="eyebrow">
+                                02 / APPLICATION
+                            </span>
+
+                            <h3>Cabins & remote properties</h3>
+
+                            <p>
+                                Discuss power continuity where utility
+                                access or reliability is a challenge.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- =============================
+                         03 - SMALL BUSINESSES
+                    ============================== -->
+                    <article class="solution-card reveal">
+
+                        <div class="solution-image-container">
+
+                            <img
+                                src="images/powervault-small-businesses.jpg"
+                                alt="Contemporary commercial property illuminated at dusk"
+                                class="solution-image"
+                                loading="lazy"
+                            >
+
+                        </div>
+
+                        <div class="solution-copy">
+
+                            <span class="eyebrow">
+                                03 / APPLICATION
+                            </span>
+
+                            <h3>Small businesses</h3>
+
+                            <p>
+                                Explore application-specific continuity
+                                requirements with a qualified project team.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- =============================
+                         04 - BUILDERS & SPECIAL PROJECTS
+                    ============================== -->
+                    <article class="solution-card reveal">
+
+                        <div class="solution-image-container">
+
+                            <img
+                                src="images/powervault-builders-projects.jpg"
+                                alt="Timber-frame construction project in a mountain setting"
+                                class="solution-image"
+                                loading="lazy"
+                            >
+
+                        </div>
+
+                        <div class="solution-copy">
+
+                            <span class="eyebrow">
+                                04 / APPLICATION
+                            </span>
+
+                            <h3>Builders & special projects</h3>
+
+                            <p>
+                                Coordinate electrical planning and
+                                equipment integration earlier in the
+                                build process.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+                <p class="concept-disclaimer">
+                    Images are conceptual illustrations representing
+                    potential applications, not completed PowerVault projects.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ====================================
+             CONFIGURATION DISCOVERY
+        ==================================== -->
+        <section class="section section-tint">
+
+            <div class="shell">
+
+                <!-- Section Heading -->
+                <div class="section-heading">
+
+                    <span class="eyebrow">
+                        CONFIGURATION DISCOVERY
+                    </span>
+
+                    <h2>Start with the right questions.</h2>
+
+                    <p>
+                        A useful conversation starts with a few
+                        practical details.
+                    </p>
+
+                </div>
+
+
+                <!-- Three Information Cards -->
+                <div class="three-grid">
+
+
+                    <!-- Question 01 -->
+                    <article class="info-card reveal">
+
+                        <span class="card-num">01</span>
+
+                        <h3>What needs to run?</h3>
+
+                        <p>
+                            Identify critical and optional loads,
+                            including high-startup equipment.
+                        </p>
+
+                    </article>
+
+
+                    <!-- Question 02 -->
+                    <article class="info-card reveal">
+
+                        <span class="card-num">02</span>
+
+                        <h3>For how long?</h3>
+
+                        <p>
+                            Consider desired backup duration and
+                            fuel or charging options.
+                        </p>
+
+                    </article>
+
+
+                    <!-- Question 03 -->
+                    <article class="info-card reveal">
+
+                        <span class="card-num">03</span>
+
+                        <h3>What can the site support?</h3>
+
+                        <p>
+                            Consider utility service, permitting,
+                            access and available space.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ====================================
+             CALL TO ACTION
+        ==================================== -->
+        <section class="cta-strip">
+
+            <div class="shell cta-inner">
+
+                <div>
+
+                    <span class="eyebrow">
+                        START THE CONVERSATION
+                    </span>
+
+                    <h2>
+                        Make room for more reliable power.
+                    </h2>
+
+                    <p>
+                        Share your property and priorities.
+                        We'll help explore an appropriate configuration.
+                    </p>
+
+                </div>
+
+                <a
+                    class="btn btn-light"
+                    href="contact.html"
+                >
+                    Request a Consultation
+                    <span aria-hidden="true">↗</span>
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ========================================
+         FOOTER
+    ========================================= -->
+    <footer class="footer">
+
+        <div class="shell footer-grid">
+
+
+            <!-- Brand -->
+            <div>
+
+                <img
+                    class="footer-logo"
+                    src="images/powervault-logo-hd.png"
+                    alt="PowerVault USA"
+                >
+
+                <p>
+                    Reliable Power. Secure Tomorrow.
+                </p>
+
+            </div>
+
+
+            <!-- Explore -->
+            <div>
+
+                <strong>Explore</strong>
+
+                <a href="system.html">The System</a>
+                <a href="solutions.html">Solutions</a>
+                <a href="technology.html">Technology</a>
+
+            </div>
+
+
+            <!-- Company -->
+            <div>
+
+                <strong>Company</strong>
+
+                <a href="installation.html">
+                    Installation & Support
+                </a>
+
+                <a href="about.html">
+                    About & Partners
+                </a>
+
+                <a href="contact.html">
+                    Contact
+                </a>
+
+            </div>
+
+
+            <!-- Contact -->
+            <div>
+
+                <strong>Get in touch</strong>
+
+                <a href="mailto:info@powervaultusa.com">
+                    info@powervaultusa.com
+                </a>
+
+                <span>
+                    Product specifications and coverage
+                    subject to confirmation.
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <!-- Footer Bottom -->
+        <div class="shell footer-bottom">
+
+            <span>
+                © <span id="currentYear"></span>
+                PowerVault USA. All rights reserved.
+            </span>
+
+            <span>
+                Designed around energy resilience.
+            </span>
+
+        </div>
+
+    </footer>
+
+
+    <!-- ========================================
+         JAVASCRIPT
+    ========================================= -->
+    <script src="script.js" defer></script>
+
+</body>
+</html>
